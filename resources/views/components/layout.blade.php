@@ -4,7 +4,10 @@
 <head>
     <!-- importar las librerías de bootstrap -->
     <link rel="stylesheet" href="{{ secure_asset('bootstrap-5.3.3-dist/css/bootstrap.min.css') }}" />
-    
+
+    <!-- importar Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
     <!-- importar los archivos JavaScript de Bootstrap-->
     <script src="{{ secure_asset('bootstrap-5.3.3-dist/js/bootstrap.min.js') }}" defer></script>
 
@@ -18,6 +21,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prestamos</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #ff0844 0%, #ffb199 100%);
+            min-height: 100vh;
+        }
+    </style>
 </head>
 <body>
     <div class="row g-0">
