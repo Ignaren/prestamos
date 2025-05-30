@@ -23,7 +23,8 @@
     <title>Prestamos</title>
     <style>
         body {
-            background: linear-gradient(120deg, #ff0844 0%, #ffb199 100%);
+            /* Fondo degradado rojo pastel */
+            background: linear-gradient(120deg, #ffb3b3 0%, #ffd6d6 100%);
             min-height: 100vh;
         }
     </style>
