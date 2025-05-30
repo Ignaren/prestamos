@@ -23,19 +23,19 @@
     <title>Prestamos</title>
     <style>
         body {
-            /* Fondo degradado rojo pastel */
-            background: linear-gradient(120deg, #ffb3b3 0%, #ffd6d6 100%);
+            /* Fondo acorde a la paleta pastel definida en style.css */
+            background: linear-gradient(120deg, #ffd6d6 0%, #ffb3b3 100%);
             min-height: 100vh;
         }
     </style>
 </head>
 <body>
-    <div class="row g-0">
+    <div class="row g-0" style="min-height: 100vh;">
         <div class="col-2">
             @component('components.sidebar')
             @endcomponent
         </div>
-        <div class="col-10">
+        <div class="col-10" style="background: rgba(255,255,255,0.7);">
             <div class="container py-4">
                 @section('content')
                 @show
