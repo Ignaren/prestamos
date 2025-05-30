@@ -40,9 +40,9 @@
                 <div class="card-body">
                     <h5 class="card-title">Información del Estudiante</h5>
                     <p class="card-text">
-                        Nombre:<br>
+                        Nombre: ignacio de jesus hernandez collazo<br>
                         Carrera: Ingeniería Informática <br>
-                        Semestre: 6°
+                        Semestre: 8°
                     </p>
                 </div>
             </div>

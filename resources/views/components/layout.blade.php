@@ -3,36 +3,34 @@
 <html lang="en">
 <head>
     <!-- importar las librerías de bootstrap -->
-    <link rel="stylesheet" href={{ secure_asset('bootstrap-5.3.3-dist/css/bootstrap.min.css') }} />
+    <link rel="stylesheet" href="{{ secure_asset('bootstrap-5.3.3-dist/css/bootstrap.min.css') }}" />
     
     <!-- importar los archivos JavaScript de Bootstrap-->
-    <script src={{ secure_asset('bootstrap-5.3.3-dist/js/bootstrap.min.js') }}></script>
-    
+    <script src="{{ secure_asset('bootstrap-5.3.3-dist/js/bootstrap.min.js') }}" defer></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
-    <link href={{ secure_asset('DataTables/datatables.min.css') }} rel="stylesheet"/>
-    <script src={{ secure_asset('DataTables/datatables.min.js') }}></script>
+    <link href="{{ secure_asset('DataTables/datatables.min.css') }}" rel="stylesheet"/>
+    <script src="{{ secure_asset('DataTables/datatables.min.js') }}" defer></script>
 
-    
-    <link href={{ secure_asset("assets/style.css") }} rel="stylesheet" />
+    <link href="{{ secure_asset('assets/style.css') }}" rel="stylesheet" />
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prestamos</title>
 </head>
 <body>
-    <div class="row">
+    <div class="row g-0">
         <div class="col-2">
-            @component("components.sidebar")
+            @component('components.sidebar')
             @endcomponent
         </div>
-    <div class="col-10">
-        <div class="container">
-            @section("content")
-            @show
+        <div class="col-10">
+            <div class="container py-4">
+                @section('content')
+                @show
+            </div>
         </div>
-    </div>
     </div>
 </body>
 </html>
