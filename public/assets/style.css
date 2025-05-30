@@ -1,8 +1,8 @@
 .sidebar {
-    background: linear-gradient(135deg, #ff4e50 80%, #f9d423 100%);
+    background: linear-gradient(135deg, #ffd6d6 70%, #ffeaea 100%);
     height: 100%;
     min-height: 100vh;
-    box-shadow: 2px 0 18px rgba(255, 78, 80, 0.15);
+    box-shadow: 2px 0 18px rgba(255, 127, 127, 0.10);
     padding-top: 2rem;
 }
 .sidebar .nav-link {
@@ -12,25 +12,25 @@
     border-radius: 0.7rem;
     margin-bottom: 0.7rem;
     padding: 0.8rem 1.2rem;
-    background: linear-gradient(90deg, #ff6a00 60%, #ff4e50 100%);
-    box-shadow: 0 2px 12px #ff4e5022;
+    background: linear-gradient(90deg, #ff7f7f 60%, #ffb3b3 100%);
+    box-shadow: 0 2px 12px #ff7f7f22;
     transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
     border: none;
 }
 .sidebar .nav-link:hover, .sidebar .nav-link.active {
-    background: linear-gradient(90deg, #fff 60%, #ffe0e0 100%);
-    color: #ff4e50;
+    background: linear-gradient(90deg, #fff 60%, #ffd6d6 100%);
+    color: #ff7f7f;
     transform: translateX(8px) scale(1.07);
-    box-shadow: 0 4px 18px #ff4e5040;
+    box-shadow: 0 4px 18px #ff7f7f40;
 }
 
 .table thead th {
-    background: linear-gradient(90deg, #ffb199 80%, #ff0844 100%);
+    background: linear-gradient(90deg, #ffd6d6 80%, #ff7f7f 100%);
     vertical-align: middle;
     text-align: center;
     font-weight: bold;
     color: #fff;
-    border-bottom: 3px solid #ff4e50;
+    border-bottom: 3px solid #ff7f7f;
     letter-spacing: 1px;
     font-size: 1.1rem;
 }
@@ -47,20 +47,20 @@
     display: block;
     padding: 1.2rem 2.5rem;
     margin: 0.7rem 0;
-    background: linear-gradient(90deg, #ff0844 60%, #ffb199 100%);
+    background: linear-gradient(90deg, #ff7f7f 60%, #ffd6d6 100%);
     color: #fff;
     text-decoration: none;
     border-radius: 1.2rem;
     font-size: 1.15rem;
     font-weight: 700;
-    box-shadow: 0 2px 12px #ff084422;
+    box-shadow: 0 2px 12px #ff7f7f22;
     transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
     border: none;
 }
 .btn-menu:hover, .btn-menu:focus {
-    background: linear-gradient(90deg, #fff 60%, #ffe0e0 100%);
-    color: #ff0844;
+    background: linear-gradient(90deg, #fff 60%, #ffd6d6 100%);
+    color: #ff7f7f;
     transform: scale(1.07);
-    box-shadow: 0 6px 24px #ff084440;
+    box-shadow: 0 6px 24px #ff7f7f40;
     outline: none;
 }
