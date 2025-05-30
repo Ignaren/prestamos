@@ -53,16 +53,16 @@ class MovimientosController extends Controller
     {
         $id_empleado=$request->input("id_empleado");
         $monto=$request->input("monto");
-        $puesto=Puesto::join("Det_Emp_Puesto", "puesto.id_puesto", "=", "Det_Emp_Puesto.fk_id_puesto")
-            ->where("Det_Emp_Puesto.fk_id_empleado","=",$id_empleado)
-            ->whereNull("Det_Emp_Puesto.fecha_fin")->first();
+        $puesto=puesto::join("det_emp_puesto", "puesto.id_puesto", "=", "det_emp_puesto.fk_id_puesto")
+            ->where("det_emp_puesto.fk_id_empleado","=",$id_empleado)
+            ->whereNull("det_emp_puesto.fecha_fin")->first();
         $sueldox6=$puesto->sueldo*6;
         if ($monto>$sueldox6){
             return view("/error",["error"=>"La solicitud excede el monto permitido"]);
         }
         $fecha_solicitud=$request->input("fecha_solicitud");
         $plazo=$request->input("plazo");
-        $fecha_aprob=$request->input("fecha_aprob");
+        $fecha_apro=$request->input("fecha_apro");
         $tasa_mensual=$request->input("tasa_mensual");
         $pago_fijo_cap=$request->input("pago_fijo_cap");
         $fecha_ini_desc=$request->input("fecha_ini_desc");
@@ -74,7 +74,7 @@ class MovimientosController extends Controller
             "fecha_solicitud"=>$fecha_solicitud,
             "monto"=>$monto,
             "plazo"=>$plazo,
-            "fecha_aprob"=>$fecha_aprob,
+            "fecha_apro"=>$fecha_apro,
             "tasa_mensual"=>$tasa_mensual,
             "pago_fijo_cap"=>$pago_fijo_cap,
             "fecha_ini_desc"=>$fecha_ini_desc,
