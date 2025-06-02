@@ -67,6 +67,7 @@ class MovimientosController extends Controller
             'fecha_ini_desc'   => $fecha_ini_desc,
             'fecha_fin_desc'   => $fecha_fin_desc,
             'estado'           => $request->input('estado'),
+            'saldo_actual'     => $request->input('saldo_actual'),
         ]);
         $prestamo->save();
 
