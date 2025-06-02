@@ -51,11 +51,9 @@ class MovimientosController extends Controller
 
     public function prestamosAgregarPost(Request $request)
     {
-        // Obtén los datos del formulario
         $fecha_ini_desc = $request->input('fecha_ini_desc');
-        $plazo = $request->input('plazo'); // en meses
+        $plazo = (int) $request->input('plazo'); // <-- Aquí conviertes a entero
 
-        // Calcula la fecha de fin
         $fecha_fin_desc = \Carbon\Carbon::parse($fecha_ini_desc)->addMonths($plazo)->format('Y-m-d');
 
         // Crea el préstamo con todos los campos necesarios
@@ -68,7 +66,6 @@ class MovimientosController extends Controller
             'pago_fijo_cap'    => $request->input('pago_fijo_cap'),
             'fecha_ini_desc'   => $fecha_ini_desc,
             'fecha_fin_desc'   => $fecha_fin_desc,
-            'saldo_actual'     => $request->input('saldo_actual'),
             'estado'           => $request->input('estado'),
         ]);
         $prestamo->save();
