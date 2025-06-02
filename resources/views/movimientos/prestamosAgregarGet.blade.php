@@ -66,10 +66,6 @@
             <input type="date" name="fecha_aprob" id="fecha_aprob" class="form-control" required>
         </div>
 
-        <div class="form-group mb-3 col-2">
-            <label for="saldo_actual">Saldo actual</label>
-            <input readonly type="number" name="saldo_actual" id="saldo_actual" class="form-control" required>
-        </div>
 
         <div class="form-group mb-3 col-2">
             <label for="estado">Estado</label>
