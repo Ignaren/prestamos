@@ -6,6 +6,7 @@
     <title>Prestamos</title>
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ secure_asset('css/estilos.css') }}">
     <style>
         body {
             background: #f8f9fa;
@@ -56,5 +57,7 @@
         @yield('content')
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ secure_asset('js/app.js') }}"></script>
+    <img src="{{ secure_asset('images/logo.png') }}">
 </body>
 </html>
